@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASTANA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="navbar">
+        <h1 class="logo">ASTANA</h1>
+        <ul class="nav-links">
+            <li><a style="opacity:1;" class="active" href="Homepage.html">Home</a></li>
+            <li><a class="alinks" href="#">Attractions</a></li>
+            <li><a class="alinks" href="Food.html">Food</a></li>
+            <li><a class="alinks" href="#">About</a></li>
+            <li><a class="ctn" href="contactspage.html">Contact</a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="img/menu-btn.png" alt="Menu-button" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <!-- Header  -->
+    <header>
+        <div class="header-content">
+            <h2>Explore the capital of Kazakhstan</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL CITY</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == Shores == -->
+    <section class="shores">
+        <div class="title">
+            <h1>Shores</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/Shores2.jpg" alt="Left shore">
+                <h4>Left Shore</h4>
+                <p>The left shore is distinguished by its new buildings and its futurism. This is considered a newer place in the city!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="img/Shores1.jpg" alt="Right shore">
+                <h4>Right Shore</h4>
+                <p>The right bank is distinguished by its history; there are older buildings here. This is considered the older part of the city!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Explore -->
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EXPLORE THE ASTANA</h1>
+        <div class="line"></div>
+        <p>The city is full of attractions that everyone should visit. They can fascinate you with their beauty and size. In one city you can immerse yourself in both a futuristic city and a city of the past.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="Food">
+        <div class="row">
+            <div class="col content-col">
+                <h1>RESTAURANTS & CAFE</h1>
+                <div class="line"></div>
+                <p>The city has many restaurants and cafes where you can get acquainted with both folk cuisine and unusual dishes. We have compiled for you the top establishments that will definitely surprise you!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/Food1.jpg" alt="">
+                    <img src="img/Food2.jpg" alt="">
+                    <img src="img/Food3.jpg" alt="">
+                    <img src="img/Food4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>Alinur Alipov, Alikhan Dosmaganbetov, Yernur Koishyabyev</p>
+        <p>SE-2211</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+</html>  
